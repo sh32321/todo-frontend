@@ -1,0 +1,30 @@
+@use "layout" as *;
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    &:focus {
+      @include btnFocus;
+    }
+  }
+}
+
+.log-out-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  .log-out-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: "Roboto", sans-serif;
+    &:hover {
+      @include btnFocus;
+    }
+  }
+}

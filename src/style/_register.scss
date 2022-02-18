@@ -1,0 +1,50 @@
+@use "layout" as *;
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-input {
+  font-size: 16px;
+  padding: 5px;
+  margin: 10%;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  &:focus {
+    @include btnFocus;
+  }
+}
+
+.signup-button {
+  color: white;
+  height: 30px;
+  width: 70px;
+  margin: auto;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  &:hover {
+    @include btnFocus;
+  }
+}
+
+.log-in-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 20px;
+  &:hover {
+    @include btnFocus;
+  }
+}

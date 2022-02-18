@@ -1,0 +1,12 @@
+@use "layout" as *;
+
+.title {
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #fffaf3;
+  font-family: "Rationale", sans-serif;
+  text-align: center;
+  @media only screen and (max-width: 580px) {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,58 @@
+@use "layout" as *;
+
+.collection {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.collection-item {
+  height: 50px;
+  width: 360px;
+  background-color: rgba(68, 73, 80, 0.3);
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: auto;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c4c4c4;
+  @media only screen and (max-width: 580px) {
+    height: 40px;
+    width: 270px;
+    font-size: 15px;
+  }
+
+  &:hover {
+    letter-spacing: 2px;
+    background-color: rgb(229, 229, 229, 0.4);
+    color: #fff;
+  }
+
+  a {
+    @media only screen and (max-width: 580px) {
+      width: 20%;
+      height: auto;
+    }
+    &:hover {
+      @include btnFocus;
+    }
+  }
+}
+
+.icon-item-container {
+  margin-left: auto;
+}
+
+.item {
+  margin-left: auto;
+}
+
+.todo-icons {
+  @media only screen and (max-width: 580px) {
+    width: 25%;
+    height: auto;
+  }
+}

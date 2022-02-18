@@ -1,0 +1,37 @@
+@use "layout" as *;
+
+.form {
+  display: flex;
+}
+.form-container {
+  margin: auto;
+  .add-form-input {
+    background-color: rgba(221, 207, 207, 0.329);
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    width: 400px;
+    margin-top: 100px;
+    padding: 5px;
+    transition: 0.3s ease-in;
+    color: beige;
+
+    @media only screen and (max-width: 580px) {
+      height: 27px;
+      width: 250px;
+    }
+    &:focus {
+      border: 1px solid rgba(255, 255, 255);
+      outline: none;
+      background-color: rgba(171, 154, 154, 0.201);
+    }
+  }
+}
+
+.send-icon {
+  margin-left: 10px;
+  margin-bottom: -5px;
+  &:hover {
+    @include btnFocus;
+  }
+}

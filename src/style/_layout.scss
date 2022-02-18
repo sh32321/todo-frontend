@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  // background-color: rgb(5, 21, 46);
+  background-image: linear-gradient(
+    to right,
+    rgb(7, 23, 50),
+    rgb(12, 28, 58),
+    rgb(14, 28, 52),
+    rgb(13, 27, 43)
+  );
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@mixin btnFocus {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+}
